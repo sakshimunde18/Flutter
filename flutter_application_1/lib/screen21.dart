@@ -1,9 +1,8 @@
 //Drawerclass
 import 'package:flutter/material.dart';
+import'package:fluttertoast/fluttertoast.dart';
 
 class MyWidget21 extends StatefulWidget {
-  const MyWidget21({super.key});
-
   @override
   State<StatefulWidget> createState() {
     return (Mystate());
@@ -31,6 +30,10 @@ class Mystate extends State<MyWidget21> {
                       Fluttertoast.showToast(msg: 'option1');
                       Navigator.pop(context);
                     },
+                     title: Text('option1'),
+                    leading: Icon(Icons.email),
+                  ),
+                  ListTile(
                     title: Text('option2'),
                     leading: Icon(Icons.exit_to_app),
                   )
