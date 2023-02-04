@@ -19,6 +19,10 @@ import 'package:flutter_application_1/screen17.dart';
 import 'package:flutter_application_1/screen18.dart';
 import 'package:flutter_application_1/screen19.dart';
 import 'package:flutter_application_1/screen20.dart';
+import 'package:flutter_application_1/screen21.dart';
+import 'package:flutter_application_1/screen22.dart';
+import 'package:flutter_application_1/screen23.dart';
+import 'package:flutter_application_1/screen24.dart';
 void main() {
   runApp(MyWidget5 ());
 }
