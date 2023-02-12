@@ -1,7 +1,6 @@
 //DataTable
 //Static+More dynamic
-// datatable
-// static + more dynamic
+
 import 'package:flutter/material.dart';
 
 class MyWidget23 extends StatefulWidget {
