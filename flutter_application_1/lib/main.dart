@@ -24,6 +24,7 @@ import 'package:flutter_application_1/screen22.dart';
 import 'package:flutter_application_1/screen23.dart';
 import 'package:flutter_application_1/screen24.dart';
 import 'package:flutter_application_1/screen25.dart';
+import 'package:flutter_application_1/screen26.dart';
 void main() {
   runApp(MyWidget5 ());
 }
