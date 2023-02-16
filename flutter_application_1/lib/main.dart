@@ -30,7 +30,7 @@ import 'package:flutter_application_1/screen28.dart';
 import 'package:flutter_application_1/screen29.dart';
 import 'package:flutter_application_1/screen30.dart';
 void main() {
-  runApp(MyWidget25 ());
+  runApp(MyWidget30 ());
 }
 
 // void main() {
