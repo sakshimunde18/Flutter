@@ -1,12 +1,6 @@
-//DataTable
-//Static+More dynamic
+// datatable
+// static + more dynamic
 import 'package:flutter/material.dart';
-
-class Item {
-  String item = '';
-  String subitem = '';
-  Item({required this.item, required this.subitem});
-}
 
 class MyWidget23 extends StatefulWidget {
   @override
@@ -15,46 +9,50 @@ class MyWidget23 extends StatefulWidget {
   }
 }
 
-class MyState extends State<MyWidget23> {
-  List<bool> State = [false, false];
-  ExpansionPanelList getPanelList() {
-    List<ExpansionPanel> panel = [];
-    List<Item> item = [
-      Item(item: 'Item1', subitem: 'Subitem1'),
-      Item(item: 'Item2', subitem: 'Subitem2')
-    ];
-    for (int i = 0; i < item.length; i++) {
-      panel.add(ExpansionPanel(
-          isExpanded: State[i],
-          headerBuilder: (context, isExpanded) {
-            return (ListTile(
-              title: Text(item[i].item)
-            ));
-          },
-          body: ListTile(
-            title: Text(item[i].item),
-            subtitle: Text(item[i].subitem)
-          )));
-    }
-return (ExpansionPanelList(
-      children: panel,
-      expansionCallback: (panelIndex, isExpanded) {
-        setState(() {
-          State[panelIndex] = !isExpanded;
-        });
-      }
-    ));
+class Student {
+  String id = "";
+  String name = "";
+  Student({required this.id, required this.name});
+}
+
+List<Student> getStudents() {
+  List<Student> students = [];
+  Student s1 = new Student(id: "123", name: "qqqq");
+  Student s2 = new Student(id: "346", name: "sdg");
+  students.add(s1);
+  students.add(s2);
+  return students;
+}
+
+List<DataRow> getRows1() {
+  List<DataRow> rows = [];
+  List<Student> studs = getStudents();
+
+  for (var i in studs) {
+    rows.add(DataRow(cells: [DataCell(Text(i.id)), DataCell(Text(i.name))]));
   }
 
+  // for (int i = 0; i < studs.length; i++) {
+  //   rows.add(DataRow(
+  //       cells: [DataCell(Text(studs[i].id)), DataCell(Text(studs[i].name))]));
+  // }
+  return rows;
+}
+
+class MyState extends State<MyWidget23> {
   @override
   Widget build(BuildContext context) {
     return (MaterialApp(
       home: Scaffold(
+        body: DataTable(
+          columns: [
+            DataColumn(label: Text("ID"), numeric: true),
+            DataColumn(label: Text("Name"))
+          ],
+          rows: getRows1(),
+        ),
         appBar: AppBar(
-          centerTitle: true,
-          title: Text('Dynamic')),
-        body: Column(
-          children: [getPanelList()]
+          title: const Text("Drawer"),
         ),
       ),
     ));

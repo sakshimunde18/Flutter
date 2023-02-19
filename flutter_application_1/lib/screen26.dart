@@ -3,7 +3,7 @@
 //named.push
 //page1
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screen27.dart';
+import 'package:basic/screen27.dart';
 
 class MyWidget26 extends StatefulWidget {
   @override

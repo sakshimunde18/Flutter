@@ -2,7 +2,7 @@
 //Passing arguments to the second screen
 //page2
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screen28.dart';
+import 'package:flutter_application1/screen28.dart';
 
 
 class MyWidget29 extends StatefulWidget {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_application_1/screen1.dart';
 import 'package:flutter_application_1/screen2.dart';
 import 'package:flutter_application_1/screen3.dart';
@@ -24,7 +25,36 @@ import 'package:flutter_application_1/screen22.dart';
 import 'package:flutter_application_1/screen23.dart';
 import 'package:flutter_application_1/screen24.dart';
 import 'package:flutter_application_1/screen25.dart';
+import 'package:flutter_application_1/screen26.dart';
+import 'package:flutter_application_1/screen27.dart';
+import 'package:flutter_application_1/screen28.dart';
+import 'package:flutter_application_1/screen29.dart';
+import 'package:flutter_application_1/screen30.dart';
+import 'package:flutter_application_1/screen31.dart';
+import 'package:flutter_application_1/screen32.dart';
+import 'package:flutter_application_1/screen33.dart';
+
 void main() {
-  runApp(MyWidget5 ());
+  runApp(MyWidget30 ());
 }
+
+// void main() {
+//   runApp(MaterialApp(
+//     initialRoute: '/',
+//     routes: {
+//       '/': (context) => MyWidget27(),
+//       '/second': (context) => MyWidget26()
+//     },
+//   ));
+// }
+
+// void main() async {
+ 
+//   runApp(MaterialApp(
+//     initialRoute: '/',
+//     routes: {'/': (context) => MyWidget32(), '/second': (context) => MyWidget33()},
+//   ));
+// }
+
+
 
