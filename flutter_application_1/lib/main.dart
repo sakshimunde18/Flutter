@@ -30,7 +30,6 @@ import 'package:flutter_application_1/screen27.dart';
 import 'package:flutter_application_1/screen28.dart';
 import 'package:flutter_application_1/screen29.dart';
 import 'package:flutter_application_1/screen30.dart';
-import 'package:flutter_application_1/screen31.dart';
 import 'package:flutter_application_1/screen32.dart';
 import 'package:flutter_application_1/screen33.dart';
 
